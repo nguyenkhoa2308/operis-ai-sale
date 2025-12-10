@@ -10,7 +10,7 @@ import type { Swiper as SwiperType } from "swiper";
 const posts = [
   {
     id: 1,
-    url: "https://bizfly.vn/techblog/chatbot-ban-hang.html",
+    url: "#",
     image: "/images/chatbot-ban-hang-1-17509288540553.jpg",
     alt: "Chatbot bán hàng là gì? Top 5 chatbot bán hàng tốt nhất hiện nay",
     date: "1/10/2025",
@@ -18,7 +18,7 @@ const posts = [
   },
   {
     id: 2,
-    url: "https://bizfly.vn/techblog/chatbot-marketing-la-gi.html",
+    url: "#",
     image: "/images/chatbot-marketing-la-gi-2-17506534278502.jpg",
     alt: "Chatbot Marketing là gì? Ứng dụng giúp doanh nghiệp tăng chuyển đổi",
     date: "4/10/2025",
@@ -27,7 +27,7 @@ const posts = [
   },
   {
     id: 3,
-    url: "https://bizfly.vn/techblog/chatbot-shopee-la-gi.html",
+    url: "#",
     image: "/images/cha16137301961256.jpg",
     alt: "Top phần mềm Chatbot Shopee miễn phí và trả phí tốt nhất hiện nay",
     date: "1/10/2025",
@@ -35,7 +35,7 @@ const posts = [
   },
   {
     id: 4,
-    url: "https://bizfly.vn/techblog/chatbot-facebook-la-gi.html",
+    url: "#",
     image: "/images/cha15843578510695.jpg",
     alt: "Chatbot Facebook là gì? Hướng dẫn tạo miễn phí hiệu quả",
     date: "2/10/2025",
@@ -43,7 +43,7 @@ const posts = [
   },
   {
     id: 5,
-    url: "https://bizfly.vn/techblog/nhung-xu-huong-bung-no-chatbot-voi-cac-doanh-nghiep-hien-nay.html",
+    url: "#",
     image: "/images/xu-huong-chatbot-ai-thumb-17599112631236.jpg",
     alt: "TOP 10 xu hướng Chatbot AI 2025: Những điều doanh nghiệp không thể bỏ lỡ",
     date: "1/10/2025",
@@ -52,7 +52,7 @@ const posts = [
   },
   {
     id: 6,
-    url: "https://bizfly.vn/techblog/uu-va-nhuoc-diem-cua-chatbot.html",
+    url: "#",
     image: "/images/uu-diem-cua-chatbot-01-16850692814148.png",
     alt: "Tổng hợp những ưu và nhược điểm của chatbot có thể bạn chưa biết",
     date: "5/9/2025",
@@ -60,7 +60,7 @@ const posts = [
   },
   {
     id: 7,
-    url: "https://bizfly.vn/techblog/doanh-nghiep-nen-dau-tu-bao-nhieu-tien-cho-chatbot-de-dem-lai-hieu-qua.html",
+    url: "#",
     image: "/images/doa15843581113051.jpg",
     alt: "Doanh nghiệp nên đầu tư bao nhiêu tiền cho chatbot",
     date: "4/9/2025",
@@ -68,7 +68,7 @@ const posts = [
   },
   {
     id: 8,
-    url: "https://bizfly.vn/techblog/bang-gia-chatbot-gia-re-hop-ly-pho-bien-nhat-hien-nay.html",
+    url: "#",
     image: "/images/ban15843582454903.jpg",
     alt: "Bảng giá Chatbot giá rẻ, hợp lý phổ biến nhất hiện nay",
     date: "2/9/2025",
@@ -76,7 +76,7 @@ const posts = [
   },
   {
     id: 9,
-    url: "https://bizfly.vn/techblog/cach-de-chatbot-tuan-thu-chinh-sach-facebook.html",
+    url: "#",
     image: "/images/115849585286980.jpg",
     alt: "Hướng dẫn chi tiết cách để chatbot tuân thủ chính sách Facebook",
     date: "3/9/2025",
@@ -84,7 +84,7 @@ const posts = [
   },
   {
     id: 10,
-    url: "https://bizfly.vn/techblog/chatbot-la-gi.html",
+    url: "#",
     image: "/images/chatbot-la-gi-16803221288331.jpg",
     alt: "Chatbot là gì? Tìm hiểu từ A đến Z về Chatbot trong kinh doanh 2025",
     date: "5/8/2025",

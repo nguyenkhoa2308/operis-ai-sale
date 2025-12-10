@@ -71,7 +71,7 @@ export default function AdvantagesSection() {
         return (
           <div
             key={index}
-            className={`box-even ${
+            className={`${
               isOdd
                 ? "box-odd bg-[linear-gradient(90deg,_#E4ECFF_2.02%,_rgba(253,_246,_242,_0.00)_99.95%)]"
                 : "bg-[linear-gradient(90deg,_rgba(253,_246,_242,_0.00)_2.02%,_#FDF6F2_99.95%)]"
@@ -89,10 +89,10 @@ export default function AdvantagesSection() {
                     isOdd ? "md:order-2" : "md:order-1"
                   }`}
                 >
-                  <h3 className="title text-xl md:text-2xl lg:text-3xl font-bold text-[#000] mb-6 leading-tight">
+                  <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-[#000] mb-6 leading-tight">
                     {advantage.title}
                   </h3>
-                  <div className="advantage--list space-y-4">
+                  <div className="space-y-4">
                     {advantage.features.map((feature, fIndex) => (
                       <div className="pl-3 relative" key={fIndex}>
                         <Image

@@ -169,7 +169,7 @@ export default function IndustriesSection() {
         <div className="w-full flex justify-center mt-6">
           <Link
             target="_blank"
-            href="https://bizfly.vn/giai-phap/demo-bizchat-ai.html?utm_source=Website&amp;utm_medium=Trangchu&amp;utm_campaign=button-dungthu-bizchatai"
+            href="#"
             className="bg-[radial-gradient(50.73%_100%_at_50%_100%,_#A068F4_0%,_#6631F3_100%)] shadow-[0_4px_8px_0_rgba(0,0,0,0.25)] text-white rounded-lg border border-1 border-[#511D9A] text-center text-[#511D9A] py-4 px-6 font-semibold text-lg line-height[130%] inline-block bg-white"
           >
             Dùng thử ngay
