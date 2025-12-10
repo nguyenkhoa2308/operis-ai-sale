@@ -1,65 +1,96 @@
-import Image from "next/image";
+import {
+  Header,
+  HeroBanner,
+  AssistantSection,
+  AdvantagesSection,
+  IndustriesSection,
+  ClientLogos,
+  AwardsSection,
+  FAQSection,
+  CTASection,
+  Footer,
+  UseCaseSection,
+  NewsSection,
+} from "@/components/landing";
+
+const slides1 = [
+  {
+    id: 1,
+    image: "/images/img-assistant1.png",
+    alt: "Tích hợp đa kênh, đa nền tảng",
+  },
+  {
+    id: 2,
+    image: "/images/img-assistant2.png",
+    alt: "AI nhận diện tự động gán nhãn",
+  },
+  {
+    id: 3,
+    image: "/images/img-assistant3.png",
+    alt: "Tự train dữ liệu theo tài liệu",
+  },
+  {
+    id: 4,
+    image: "/images/img-assistant4.png",
+    alt: "Tư vấn tự nhiên, đúng luồng",
+  },
+];
+
+const slides2 = [
+  {
+    id: 1,
+    image: "/images/img-assistant5.png",
+    alt: "Chatbot công nghệ cao, thành thạo giao tiếp đa ngôn ngữ",
+  },
+  {
+    id: 2,
+    image: "/images/img-assistant6.png",
+    alt: "Xây dựng hành trình trả nghiệm tốt nhất cho khách hàng nhờ API kết nối theo đặc thù từng ngành",
+  },
+  {
+    id: 3,
+    image: "/images/img-assistant7.png",
+    alt: "Phân luồng quy trình xử lý dữ liệu, báo cáo khoa học, trực quan",
+  },
+  {
+    id: 4,
+    image: "/images/img-assistant8.png",
+    alt: "xử lý hội thoại đa nền tảng, cá nhân hoá tương tác",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <div className="min-h-screen">
+      <Header />
+      <main>
+        <HeroBanner />
+        <AssistantSection
+          title="Trợ lý AI thế hệ mới"
+          subtitle="Tư vấn linh hoạt, hiểu ngữ cảnh, phản hồi như con người"
+          description="Dịch vụ Chatbot AI - OperisChatAI ứng dụng trí tuệ nhân tạo để hiểu nhu
+            cầu khách hàng, tư vấn theo ngữ cảnh và phản hồi theo thời gian
+            thực, thay vì chỉ chạy theo kịch bản cứng nhắc"
+          slides={slides1}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <AdvantagesSection />
+        <AssistantSection
+          title="OperisChatAI ứng dụng công nghệ mới nhất, được phát triển bởi đội ngũ Operis"
+          slides={slides2}
+          buttonTitle="Đăng ký tư vấn 1:1"
+        />
+        <IndustriesSection />
+        <UseCaseSection />
+        <ClientLogos />
+
+        <div className="w-full bg-[linear-gradient(180deg,_#FDF6F2_0%,_#FFF_100%)]">
+          <AwardsSection />
+          <FAQSection />
+          <NewsSection />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+        <CTASection />
       </main>
+      <Footer />
     </div>
   );
 }

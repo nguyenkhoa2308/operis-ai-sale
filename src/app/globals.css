@@ -3,24 +3,183 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary: #3b82f6;
+  --primary-dark: #2563eb;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --font-sans: var(--font-lexend), system-ui, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: var(--font-sans); */
+}
+
+/* Custom animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.3s ease-out;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Guide box staggered animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.guide-box {
+  animation: fadeInUp 0.4s ease-out backwards;
+}
+
+.guide-box:nth-child(1) { animation-delay: 0ms; }
+.guide-box:nth-child(2) { animation-delay: 50ms; }
+.guide-box:nth-child(3) { animation-delay: 100ms; }
+.guide-box:nth-child(4) { animation-delay: 150ms; }
+.guide-box:nth-child(5) { animation-delay: 200ms; }
+.guide-box:nth-child(6) { animation-delay: 250ms; }
+.guide-box:nth-child(7) { animation-delay: 300ms; }
+.guide-box:nth-child(8) { animation-delay: 350ms; }
+.guide-box:nth-child(9) { animation-delay: 400ms; }
+.guide-box:nth-child(10) { animation-delay: 450ms; }
+.guide-box:nth-child(11) { animation-delay: 500ms; }
+.guide-box:nth-child(12) { animation-delay: 550ms; }
+.guide-box:nth-child(13) { animation-delay: 600ms; }
+.guide-box:nth-child(14) { animation-delay: 650ms; }
+.guide-box:nth-child(15) { animation-delay: 700ms; }
+.guide-box:nth-child(16) { animation-delay: 750ms; }
+.guide-box:nth-child(17) { animation-delay: 800ms; }
+.guide-box:nth-child(18) { animation-delay: 850ms; }
+.guide-box:nth-child(19) { animation-delay: 900ms; }
+.guide-box:nth-child(20) { animation-delay: 950ms; }
+
+/* Hide scrollbar for video carousel */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Video Swiper custom styles */
+.video-swiper .swiper-button-prev,
+.video-swiper .swiper-button-next {
+  display: none;
+}
+
+/* Custom navigation button disabled state */
+.video-swiper .swiper-prev-btn.swiper-button-disabled,
+.video-swiper .swiper-next-btn.swiper-button-disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  transform: scale(1) !important;
+  box-shadow: none;
+}
+
+/* Video Modal Animation */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.video-modal-overlay {
+  animation: modalFadeIn 0.2s ease-out;
+}
+
+.video-modal-content {
+  animation: modalSlideUp 0.3s ease-out;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Selection color */
+::selection {
+  background: rgba(59, 130, 246, 0.3);
 }

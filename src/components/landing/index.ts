@@ -1,0 +1,12 @@
+export { default as Header } from "./Header";
+export { default as HeroBanner } from "./HeroBanner";
+export { default as AssistantSection } from "./AssistantSection";
+export { default as AdvantagesSection } from "./AdvantagesSection";
+export { default as IndustriesSection } from "./IndustriesSection";
+export { default as UseCaseSection } from "./UseCaseSection";
+export { default as ClientLogos } from "./TestimonialSection";
+export { default as AwardsSection } from "./AwardsSection";
+export { default as FAQSection } from "./FAQSection";
+export { default as NewsSection } from "./NewsSection";
+export { default as CTASection } from "./ContactSection";
+export { default as Footer } from "./Footer";

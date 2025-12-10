@@ -1,0 +1,2664 @@
+.block_martech_top {
+  float: left;
+  width: 100%;
+  padding: 24px 0;
+  background: #fff;
+}
+
+.block_martech_top--title {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+}
+
+.block_martech_top--title h1 {
+  flex: 1;
+  width: 100%;
+  color: #1e1f4d;
+  font-family: "Lexend Deca";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 154.545%;
+  display: flex;
+}
+
+.block_martech_top--title ._txt {
+  color: #878a99;
+  text-align: right;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  max-width: 432px;
+  flex-shrink: 0;
+}
+
+.wrap {
+  /* overflow: hidden; */
+}
+
+/* block_martech_menu */
+
+.block_martech_menu {
+  width: 100%;
+  float: left;
+  background: #fff;
+  padding: 24px 0 13px;
+}
+
+.block_martech_menu.block_martech_menu--subpage,
+.block_martech_menu.fixed {
+  background: #f3f6f9;
+  padding: 20px 0;
+}
+
+.block_martech_menu.fixed {
+  top: 122px;
+  left: 0;
+  position: fixed;
+  z-index: 999;
+}
+
+.martech_menu--tab {
+  display: flex;
+  align-items: center;
+  gap: 10px 24px;
+  width: 100%;
+}
+
+.martech_menu--search {
+  flex-shrink: 0;
+  width: 18px;
+  height: fit-content;
+  margin-left: auto;
+}
+
+.martech_menu--search svg {
+  width: 100%;
+}
+
+.martech_menu--search svg path {
+  stroke: #2d65cd;
+}
+
+.block_martech_menu.fixed .martech_menu--search svg path,
+.block_martech_menu.block_martech_menu--subpage .martech_menu--search svg path {
+  stroke: #212529;
+}
+
+.martech_menu--search.dropdown-toggle::after {
+  display: none;
+}
+
+.block_martech_menu .dropdown-menu {
+  padding: 0;
+  background: #fff;
+  box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.08),
+    0px 9px 28px 0px rgba(0, 0, 0, 0.05);
+  border: 0;
+  width: 240px;
+  border-radius: 0;
+  right: 0 !important;
+  left: auto !important;
+  transform: translate3d(0, 28px, 0px) !important;
+}
+
+.dropdown-menu--searh {
+  position: relative;
+  padding-right: 27px;
+}
+
+.dropdown-menu--searh a {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+  margin: auto;
+}
+
+.dropdown-menu--searh input {
+  width: 100%;
+  height: 35px;
+  border: 0;
+  border-radius: 0;
+  padding-left: 10px;
+  color: #bdbdbd;
+  font-size: 12px;
+}
+
+.ic-arrow-top {
+  display: block;
+  position: absolute;
+  bottom: calc(100% - 1px);
+  right: 17px;
+}
+
+.dropdown-menu--searh input:focus-visible {
+  outline: unset !important;
+}
+
+.martech_menu--tab > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+}
+
+.martech_menu--tab > ul > li {
+  position: relative;
+  color: #212529;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 150%;
+  display: flex;
+  gap: 13px;
+}
+
+.martech_menu--tab ul > li > a {
+  color: #212529;
+}
+
+.martech_menu--tab > ul > li:hover > a,
+.martech_menu--tab > ul > li.active > a {
+  color: #3362d7;
+}
+
+.martech_menu--tab > ul > li:hover a._icon svg path,
+.martech_menu--tab > ul > li.active a._icon svg path {
+  stroke: #3362d7;
+}
+
+.martech_menu--child {
+  position: absolute;
+  top: 100%;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  min-width: 213px;
+  padding: 16px 0 0;
+  z-index: 55;
+  list-style: none;
+}
+
+.martech_menu--child ul {
+  position: absolute;
+  margin: 0;
+  padding: 12px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  top: 0;
+  left: 100%;
+  opacity: 0;
+  visibility: hidden;
+  min-width: 213px;
+  background-color: #fff;
+}
+
+.martech_menu--child ul li {
+  list-style: none;
+}
+
+.martech_menu--child li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.martech_menu--tab > ul > li:hover .martech_menu--child {
+  opacity: 1;
+  visibility: visible;
+}
+
+.martech_menu--child::after {
+  width: 100%;
+  flex-wrap: wrap;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #fff;
+  height: calc(100% - 16px);
+  left: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+
+.martech_menu--child li {
+  position: relative;
+  z-index: 2;
+}
+
+.martech_menu--child a {
+  width: 100%;
+  padding: 5px 12px;
+  color: #212529;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.martech_menu--child a.active,
+.martech_menu--child a:hover {
+  color: #3fddfe;
+}
+
+.martech_menu--child a.active svg path,
+.martech_menu--child a:hover svg path {
+  stroke: #3fddfe;
+}
+
+/* block_martech_news */
+
+.block_martech_news {
+  width: 100%;
+  float: left;
+  padding: 44px 0 32px;
+  background: linear-gradient(
+    180deg,
+    #ecf0f8 -8.86%,
+    rgba(236, 240, 248, 0.8) 36.55%,
+    rgba(255, 255, 255, 0) 100.02%
+  );
+}
+
+.block_martech_news.subpage_digitalsolution {
+  background: #fff;
+}
+
+._martech_news--hots {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+._martech_news--hots .img {
+  width: 100%;
+  padding-top: 60%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+._martech_news--hots .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+._martech_news--hots ._body {
+  width: 100%;
+}
+
+.news--sub_title {
+  border-radius: 4px;
+  background: #d8e3fe;
+  display: inline-block;
+  color: #0004b4;
+  text-align: center;
+  font-size: 14px;
+  line-height: 142.857%;
+  padding: 1px 8px;
+  margin-bottom: 16px;
+}
+
+.news--sub_title:hover {
+  color: #0004b4;
+}
+
+.news--title {
+  color: #212529;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133.333%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0 0 16px;
+}
+
+.news--title a {
+  color: #212529;
+}
+
+.news--txt {
+  color: #495057;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 150%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.news--txt p:last-child {
+  margin-bottom: 0;
+}
+
+.news--date {
+  color: #000;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 142.857%;
+}
+
+._martech_news--list {
+  width: 100%;
+}
+
+._martech_news--list .swiper-container {
+  margin-bottom: 32px;
+}
+
+._martech_news--list .swiper-slide {
+  height: auto;
+}
+
+._martech_news--list .swiper-slide::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #ced4da;
+  position: absolute;
+  top: 0;
+  right: -32px;
+}
+
+._martech_news--items {
+  width: 100%;
+  padding: 24px 0;
+}
+
+._martech_news--items ._news--items_datesub {
+  margin-bottom: 0;
+}
+
+._martech_news--items .news--title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+._news--items_datesub {
+  display: flex;
+  align-items: center;
+  gap: 10px 24px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+._news--items_datesub .news--sub_title {
+  margin-bottom: 0;
+}
+
+.box--custom {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  width: 100%;
+}
+
+.box--custom .swiper-pagination {
+  position: unset;
+}
+
+.box--nextprev {
+  display: flex;
+  gap: 12px;
+}
+
+.box--nextprev .swiper-button-all {
+  position: unset;
+  margin: 0;
+  background-image: none;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #4d7ff8;
+  background-color: #4d7ff8;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.box--nextprev .swiper-button-all.swiper-button-disabled {
+  background-color: #fff;
+  opacity: 1;
+}
+
+.box--nextprev .swiper-button-all.swiper-button-disabled svg path {
+  stroke: #4d7ff8;
+}
+
+.box--nextprev .swiper-button-all::after {
+  display: none;
+}
+
+.box--custom ._line {
+  flex: 1;
+  width: 100%;
+  height: 1px;
+  background: #ced4da;
+}
+
+.box--custom .swiper-pagination {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.box--custom .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background: #bacefc;
+  opacity: 1;
+}
+
+.box--custom .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 40px;
+  background: #4d7ff8;
+}
+
+/* block_martech_cdp */
+
+.block_martech_cdp {
+  float: left;
+  width: 100%;
+  padding: 32px 0;
+  background: #fff;
+}
+
+.block_martech_cdp_list .row {
+  gap: 30px 0;
+}
+
+.author--news {
+  margin-top: 48px;
+  width: 100%;
+  border-radius: 16px;
+  border: 1px solid #cddbff;
+  background: #eef5ff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.author--news .author--img {
+  width: 168px;
+  height: 230px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.author--news .author--img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.author--body {
+  width: 100%;
+  flex: 1;
+}
+
+.author-sub {
+  color: #495057;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 162.5%;
+  margin-bottom: 6px;
+}
+
+.author--name {
+  color: #495057;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #cddbff;
+  margin-bottom: 15px;
+}
+
+.author--name .--name {
+  color: #0004b4;
+  font-family: "Lexend Deca";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 136.364%;
+}
+
+.author--desc {
+  color: #495057;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 157.143%;
+}
+
+.author--desc p:last-child {
+  margin-bottom: 0;
+}
+
+/* block_martech_digitalsolution */
+
+.block_martech_digitalsolution {
+  float: left;
+  width: 100%;
+  padding: 32px 0;
+  background: #fff;
+}
+
+._martech_box--title {
+  display: flex;
+  align-items: start;
+  gap: 10px 24px;
+  margin-bottom: 32px;
+}
+
+._martech_box--title .title {
+  color: #1e1f4d;
+  font-family: "Lexend Deca";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 155.556%;
+  margin: 0;
+  flex: 1;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+._martech_box--title h1.title {
+  -webkit-touch-callout: auto;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  -ms-user-select: auto;
+  -o-user-select: auto;
+  user-select: auto;
+}
+
+.link-banner {
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+._martech_box--title .title.font-24 {
+  font-size: 24px;
+}
+
+._martech_box--title ._links {
+  color: #4d7ff8;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 150%;
+  flex-shrink: 0;
+  padding-top: 8px;
+}
+
+._martech_box--title ._links img {
+  margin-left: 12px;
+}
+
+._martech_box--title._martech_box--titlelines .title {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+  gap: 24px;
+}
+
+._digitalsolution--child---box
+  ._martech_box--title._martech_box--titlelines
+  .title::after {
+  width: 100%;
+  flex: inherit;
+  height: 1px;
+  background: #ced4da;
+  content: "";
+}
+
+._digitalsolution_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 64px;
+}
+
+._digitalsolution_box._digitalsolution_boxlast {
+  gap: 0 64px;
+}
+
+._digitalsolution_box--left {
+  width: calc(65.6667% - 32px);
+}
+
+._digitalsolution_box--right {
+  width: calc(34.3333% - 32px);
+}
+
+._digitalsolution_list {
+  border-radius: 16px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+}
+
+._digitalsolution_list h3.title {
+  color: #1e1f4d;
+  font-family: "Lexend Deca";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133.333%;
+  margin: 0 0 32px;
+}
+
+._digitalsolution_list--item {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+._digitalsolution_list--item:last-child {
+  margin-bottom: 0;
+}
+
+._digitalsolution_list--title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-right: 36px;
+  gap: 16px;
+  background-image: url("/images/martech/ic-mt-4.png");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  cursor: pointer;
+}
+
+._digitalsolution_list--title[aria-expanded="true"] {
+  background-image: url("/images/martech/ic-mt-5.png");
+}
+
+._digitalsolution_list--title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  flex: 1;
+  height: 1px;
+  background: #ced4da;
+}
+
+._digitalsolution_list--title .txt {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  color: #4d7ff8;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  gap: 12px;
+}
+
+._digitalsolution_list--title .txt ._icon {
+  width: 22px;
+  flex-shrink: 0;
+}
+
+._digitalsolution_list--title .txt ._icon img {
+  max-width: 100%;
+}
+
+._digitalsolution_list--body {
+  width: 100%;
+  padding-top: 16px;
+  color: #212529;
+  font-size: 16px;
+  line-height: 150%;
+  padding-left: 8px;
+}
+
+._digitalsolution_list--body p:last-child {
+  margin-bottom: 0;
+}
+
+._digitalsolution_list--body a {
+  color: #212529;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+._martech--tab {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+._martech--tab a {
+  padding: 8px 14px;
+  border-radius: 6px;
+  color: #878a99;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 150%;
+}
+
+._martech--tab a.active,
+._martech--tab a:hover {
+  background: #f2f2f2;
+  color: #4d7ff8;
+}
+
+._digitalsolution_box--list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 32px;
+}
+
+._digitalsolution_box--list.p-16 {
+  padding-top: 16px;
+}
+
+.news_second--items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.news_second--items .img {
+  width: 150px;
+  height: 96px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.news_second--items .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.news_second--items ._body {
+  width: calc(100% - 150px);
+  padding-left: 24px;
+}
+
+.news_second--items ._body ._news--items_datesub {
+  margin-bottom: 12px;
+}
+
+.news_second--items ._body .title {
+  color: #212529;
+  font-family: "Lexend Deca";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 144.444%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0;
+}
+
+.news_second--items ._body .title a {
+  color: #212529;
+}
+
+.news_first--items {
+  width: 100%;
+}
+
+.news_first--items.news_first--itemsnewspress::after {
+  width: 100%;
+  height: calc(100% - 79px);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 16px;
+  background: #f4faff;
+  content: "";
+  display: block;
+}
+
+.news_first--items.news_first--itemsnewspress {
+  padding: 0 0 32px;
+}
+
+.news_first--items.news_first--itemsnewspress ._body {
+  position: relative;
+  z-index: 3;
+  padding: 0 32px;
+}
+
+.news_first--items---top {
+  display: flex;
+  align-items: end;
+  position: relative;
+  z-index: 3;
+  padding: 0 32px;
+  margin-bottom: 24px;
+}
+
+.news_first--items---img {
+  width: 100%;
+  flex: 1;
+}
+
+.btn---download {
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #495057;
+  background: #6d2fdd;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #fff;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  padding: 8px 16px;
+}
+
+.btn---download img {
+  margin-left: 8px;
+}
+
+.news_first--items---left {
+  width: 264px;
+  height: 158px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.news_first--items---left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.news_first--items .img {
+  width: 100%;
+  padding-top: 63.7%;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 24px;
+}
+
+.news_first--items .img > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.news_first--items ._body .title {
+  color: #212529;
+  font-family: "Lexend Deca";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133.333%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  margin: 0 0 16px;
+}
+
+.news_first--items ._body .title a {
+  color: #212529;
+}
+
+/* block_martech_document */
+
+.block_martech_document {
+  float: left;
+  width: 100%;
+  padding: 32px 0 64px;
+  background: #fff;
+}
+
+.block_martech_document ._martech_news--list .swiper-slide::after {
+  display: none;
+}
+
+.block_martech_document .news_first--items ._body .title {
+  font-size: 18px;
+}
+
+.btn--download {
+  border-radius: 4px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  display: inline-block;
+  padding: 10px 18px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  color: #6d2fdd;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  z-index: 3;
+  width: fit-content;
+  height: fit-content;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn--download img {
+  margin-left: 8px;
+}
+
+.btn--download:hover {
+  color: #6d2fdd;
+}
+
+.block_martech_document .news_first--items .img::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+  transition: 0.85s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.news_first--items:hover .img::after,
+.news_first--items:hover .img .btn--download {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* block_martech_press */
+
+.block_martech_press {
+  width: 100%;
+  float: left;
+  padding: 64px 0 32px;
+  background: linear-gradient(
+    180deg,
+    #ecf0f8 -8.86%,
+    rgba(236, 240, 248, 0.8) 36.55%,
+    rgba(255, 255, 255, 0) 100.02%
+  );
+}
+
+.block_martech_press .news_second--items {
+  width: calc(50% - 24px);
+}
+
+.news_second--items .btn---download {
+  padding: 0;
+  color: #6d2fdd;
+  background: transparent;
+  box-shadow: none;
+  margin-top: 12px;
+  display: inline-block;
+  border: 0;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+/* block_martech_support */
+
+.block_martech_support {
+  float: left;
+  width: 100%;
+  padding: 32px 0;
+  background: #fff;
+}
+
+.martech_support--box {
+  border-radius: 16px;
+  padding: 48px 96px;
+  overflow: hidden;
+  background: url("/images/martech/bg-supp.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.martech_support--box ._martech_box--title {
+  flex-wrap: wrap;
+}
+
+.martech_support--box ._martech_box--title .title {
+  flex: auto;
+  color: #fff;
+}
+
+.martech_support--box ._martech_box--title ._txt {
+  color: #eff2f7;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.martech_support--form {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.martech_support--right {
+  flex-shrink: 0;
+}
+
+.martech_support--right a {
+  display: inline-block;
+  color: #fff;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 9px 18px;
+  border-radius: 8px;
+  border: 1px solid #212529;
+  background: #2f80ed;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+}
+
+.martech_support--left {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+
+.martech_support--col {
+  width: calc(33.3333% - 8px);
+}
+
+.__input--control {
+  border-radius: 8px;
+  border: 1px solid #e9ebec;
+  background-color: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  width: 100%;
+  height: 44px;
+  padding: 0 14px;
+  color: #212529;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+}
+
+.__input--control::placeholder {
+  color: #878a99;
+}
+
+.__input--control:focus-visible {
+  outline: unset;
+}
+
+select.__input--control {
+  appearance: unset;
+  background-image: url("/images/martech/ic-mt-8.png");
+  background-repeat: no-repeat;
+  background-position: right 19px center;
+  padding-right: 30px;
+}
+
+/* block_martech_expertsharing */
+
+.block_martech_expertsharing {
+  width: 100%;
+  float: left;
+  padding: 32px 0;
+  background: #fff;
+  overflow: hidden;
+}
+
+.block_martech_expertsharing ._martech_news--list .swiper-slide::after {
+  display: none;
+}
+
+.block_martech_expertsharing ._martech_news--list .swiper-container {
+  overflow: visible;
+  width: 563px;
+  margin-left: 0;
+}
+
+.block_martech_expertsharing ._martech_news--list .swiper-slide {
+  width: 63.4% !important;
+}
+
+.block_martech_expertsharing
+  ._martech_news--list
+  .swiper-slide
+  .news_first--items
+  ._body
+  .title {
+  font-size: 18px;
+}
+
+.block_martech_expertsharing
+  ._martech_news--list
+  .swiper-slide.swiper-slide-active
+  .news_first--items
+  ._body
+  .title {
+  font-size: 24px;
+}
+
+.block_martech_expertsharing
+  ._martech_news--list
+  .swiper-slide.swiper-slide-active {
+  width: 100% !important;
+}
+
+.news_first--time {
+  display: block;
+  width: fit-content;
+  height: fit-content;
+  padding: 8px 12px;
+  color: #212529;
+  font-size: 14px;
+  line-height: 142.857%;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  z-index: 5;
+}
+
+.news_first--time img {
+  margin-right: 8px;
+}
+
+/* trang giai phap chuyen doi so */
+
+.subpage_digitalsolution--listnew {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 64px;
+}
+
+.subpage_digitalsolution--listnew ._martech_news--items {
+  width: calc(33.3333% - 42.6666px);
+  position: relative;
+}
+
+.subpage_digitalsolution--listnew ._martech_news--items::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: #ced4da;
+  position: absolute;
+  top: 0;
+  right: -32px;
+}
+
+.subpage_digitalsolution--listnew ._martech_news--items:last-child::after {
+  display: none;
+}
+
+.subpage_digitalsolution ._martech_box--title {
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.subpage_digitalsolution ._martech_box--title .title {
+  flex: none;
+}
+
+._martech_box--txt {
+  color: #878a99;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+/* subpage_digitalsolution_category */
+
+.subpage_digitalsolution_category {
+  width: 100%;
+  float: left;
+  background: linear-gradient(
+    180deg,
+    #ecf0f8 -8.86%,
+    rgba(236, 240, 248, 0.8) 36.55%,
+    rgba(255, 255, 255, 0) 100.02%
+  );
+  padding: 32px 0;
+}
+
+.subpage_digitalsolution--categorylist .col {
+  padding: 0 12px;
+}
+
+.subpage_digitalsolution--categorylist .row {
+  gap: 24px 0;
+  margin: 0 -12px;
+}
+
+.digitalsolution--categorylist--items {
+  width: 100%;
+  height: 100%;
+  min-height: 72px;
+  display: flex;
+  border-radius: 8px;
+  border: 1px solid #a4beff;
+  background: #fff;
+  justify-content: center;
+  align-items: center;
+  color: #1e1f4d;
+  text-align: center;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 11px 15px;
+}
+
+.digitalsolution--categorylist--items:hover,
+.digitalsolution--categorylist--items.active {
+  background: #4d7ff8;
+  color: #fff;
+}
+
+.subpage_digitalsolution_category ._martech_box--title .title {
+  font-size: 24px;
+}
+
+.subpage_digitalsolution_all {
+  float: left;
+  width: 100%;
+  padding: 32px 0;
+  background: transparent;
+}
+
+.category-wrapper-gradient {
+  background: linear-gradient(
+    180deg,
+    #ecf0f8 -8.86%,
+    rgba(236, 240, 248, 0.8) 36.55%,
+    rgba(255, 255, 255, 0) 100.02%
+  );
+  float: left;
+  width: 100%;
+  padding-top: 32px;
+}
+
+/* subpage_digitalsolution_categorycrm */
+
+.subpage_digitalsolution_categorycrm {
+}
+
+.digitalsolution_categorycrm--list {
+  width: 100%;
+}
+
+.digitalsolution_categorycrm--list .row {
+  margin: 0 -24px;
+  gap: 30px 0;
+}
+
+.digitalsolution_categorycrm--list .col-lg-3 {
+  padding: 0 24px;
+}
+
+.digitalsolution_categorycrm--list .news_first--items ._body .title {
+  font-size: 18px;
+}
+
+/* subpage_digitalsolution_categorychatemail */
+
+.subpage_digitalsolution_categorychatemail {
+}
+
+.digitalsolution_categorychatemail--items {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  background: #f4faff;
+  padding: 32px;
+}
+
+.list-first .digitalsolution_categorychatemail--items {
+  padding: 32px 0 0;
+  background: transparent;
+}
+
+.digitalsolution_categorychatemail--list .row > * {
+  padding: 0 20px;
+}
+
+.digitalsolution_categorychatemail--list .row {
+  margin: 0 -20px;
+  gap: 30px 0;
+}
+
+.digitalsolution_categorychatemail--items ._martech_box--title .title {
+  font-size: 24px;
+}
+
+/* css-ss */
+
+.list-second .news_second--items {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ced4da;
+}
+
+.list-second .news_second--items:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.list-second .news_second--items ._body {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.list-second .news_second--items .img {
+  display: none;
+}
+
+.list-second ._digitalsolution_box--list {
+  gap: 20px;
+}
+
+.list-second .news_second--items ._body ._news--items_datesub {
+  margin: 0;
+}
+
+.news_second--items ._body ._news--items_datesub
+/* subpage_digitalsolution_categoryweb */
+
+.subpage_digitalsolution_categoryweb {
+}
+
+/* subpage_digitalsolution_categorymbapp */
+
+.subpage_digitalsolution_categorymbapp {
+}
+
+.subpage_digitalsolution_categorymbapp .news_second--items {
+  width: calc(50% - 24px);
+}
+
+/* block_martech_breadcrumb */
+
+.block_martech_breadcrumb {
+  float: left;
+  width: 100%;
+  padding: 24px 0;
+  background: #fff;
+}
+
+.block_martech_breadcrumb nav {
+  /* display: none; */
+}
+
+.block_martech_breadcrumb .breadcrumb {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.block_martech_breadcrumb .breadcrumb .breadcrumb-item {
+  color: #000;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.block_martech_breadcrumb .breadcrumb .breadcrumb-item a {
+  color: #000;
+}
+
+.block_martech_breadcrumb .breadcrumb .breadcrumb-item:last-child a,
+.block_martech_breadcrumb .breadcrumb .breadcrumb-item:last-child {
+  color: #000;
+}
+
+.block_martech_breadcrumb .breadcrumb .breadcrumb-item + .breadcrumb-item {
+  padding-left: 19px;
+}
+
+.block_martech_breadcrumb
+  .breadcrumb
+  .breadcrumb-item
+  + .breadcrumb-item::before {
+  margin-right: 18px;
+  width: 8px;
+  height: 12px;
+  background: transparent url("/images/martech/ic-mt-arr-left-10.png") no-repeat
+    center center;
+  vertical-align: -2px;
+}
+
+/* subpage_digitalsolution--child */
+
+.subpage_digitalsolution--child {
+  width: 100%;
+  float: left;
+  padding: 8px 0 64px;
+}
+
+.subpage_digitalsolution--child .img-wrapper {
+  border-radius: 24px;
+  overflow: hidden;
+  margin-bottom: 48px;
+}
+
+.subpage_digitalsolution--child .img-wrapper img {
+  width: 100% !important;
+  height: auto !important;
+}
+
+._digitalsolution--child--left {
+  padding-right: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 64px;
+}
+
+._digitalsolution--child--left > * {
+  width: 100%;
+}
+
+._digitalsolution--child---category {
+}
+
+._digitalsolution--child---category ._martech_box--title {
+  margin-bottom: 32px;
+}
+
+._digitalsolution--child---banner {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+  margin: 64px 0;
+}
+
+._digitalsolution--child---banner img {
+  width: 100%;
+}
+
+._digitalsolution--child--right {
+  width: 100%;
+}
+._digitalsolution--child--right.sidebar-sticky > *:not(#w2) {
+  display: none;
+}
+._digitalsolution--child--right.sidebar-sticky {
+  top: 90px;
+  position: sticky;
+}
+
+._digitalsolution--child--right > * {
+  width: 100%;
+}
+._digitalsolution--child--right .right-top {
+  margin-bottom: 48px;
+}
+
+/* ._digitalsolution--child--hots ._digitalsolution--child--hotsfirst ._news--items_datesub, */
+
+/* ._digitalsolution--child--hots ._martech_news--items ._news--items_datesub, */
+
+._digitalsolution--child--hots
+  ._digitalsolution--child--hotsfirst
+  .news_first--items
+  ._body
+  .news--txt {
+  /* display: none; */
+}
+
+._digitalsolution--child--zalo {
+  border-radius: 16px;
+  border: 1px solid #cddbff;
+  background: #eef5ff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+}
+
+._digitalsolution--child--zalo ._martech_box--title {
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+._digitalsolution--child--zalo ._martech_box--title .title {
+  font-size: 24px;
+  text-align: center;
+  width: 100%;
+}
+
+._digitalsolution--child--zalo ._martech_box--title ._martech_box--txt {
+  text-align: center;
+  width: 100%;
+}
+
+._martech--btn {
+  display: inline-block;
+  width: 100%;
+  border-radius: 8px;
+  background: #2f80ed;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #fff;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  text-align: center;
+  padding: 10px;
+}
+
+._martech--btn:hover {
+  color: #fff;
+}
+
+._digitalsolution--child--hots {
+  /* border: 1px solid #DDDDDD;
+    border-radius: 4px;
+    padding: 20px 16px; */
+}
+
+._digitalsolution--child--hots .news_first--items .img {
+  border-radius: 0;
+  margin-bottom: 24px;
+}
+
+._digitalsolution--child--hots ._martech_box--title {
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+._digitalsolution--child--hots ._martech_box--title .title {
+  font-size: 24px;
+  color: #212529;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133.333%;
+}
+
+._digitalsolution--child--hotsfirst {
+  margin-bottom: 24px;
+}
+
+._digitalsolution--child--hotsfirst ._news--items_datesub {
+  margin-bottom: 12px;
+}
+
+._digitalsolution--child--hotsfirst .news_first--items ._body .title {
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+._digitalsolution--child--hotsfirst .news_first--items ._body .news--txt {
+  -webkit-line-clamp: 2;
+  margin-bottom: 0;
+}
+
+._digitalsolution--child--hotslist {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+._digitalsolution--child--hotslist > * {
+  width: 100%;
+}
+
+._digitalsolution--child--hotslist ._martech_news--items {
+  /* padding: 0 0 0 14px;
+    position: relative; */
+  border-top: 1px solid #ced4da;
+}
+
+/* ._digitalsolution--child--hotslist ._martech_news--items::after {
+    background: #7593FF;
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 0;
+} */
+
+.box-hot-new {
+  padding: 10px 0 0;
+  text-align: center;
+  display: none;
+}
+
+.btn_border_all {
+  border: 1px solid #4d7ffd;
+  border-radius: 4px;
+  font-family: Lexend Deca;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  color: #4d7ffd;
+  text-align: center;
+  padding: 8px 20px 6px;
+}
+
+.btn_border_all:hover {
+  color: #4d7ffd;
+}
+
+.ic-2 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: transparent url(../images/camnang/ic-2.png) no-repeat center
+    center;
+  margin-left: 16px;
+}
+
+._digitalsolution--child--hotslist ._martech_news--items .news--title {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+._digitalsolution--child--hotslist ._martech_news--items:hover .news--title,
+._digitalsolution--child--hotslist ._martech_news--items:hover .news--title a {
+  color: #7593ff;
+}
+
+._digitalsolution--child--hotslist ._martech_news--items .title {
+  font-size: 16px;
+  margin-bottom: 0;
+  color: #212529;
+  font-weight: 600;
+}
+
+._digitalsolution--child--right
+  ._digitalsolution--child--hotslist
+  ._martech_news--items
+  .title {
+  margin-bottom: 00px;
+}
+
+._digitalsolution--child--hotslist ._martech_news--items .news--title a,
+._digitalsolution--child--hotslist ._martech_news--items .title a {
+  color: #212529;
+}
+
+._digitalsolution--child---category ._martech_news--hots {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 25px 32px;
+  margin-bottom: 0;
+}
+
+._digitalsolution--child---category ._martech_news--hots .news--txt {
+  display: none;
+}
+
+._martech_news--hots---left {
+  width: calc(54.37% - 16px);
+}
+
+._martech_news--hots---right {
+  width: calc(45.63% - 16px);
+}
+
+._martech_news--hots---right .news--title {
+  -webkit-line-clamp: 3;
+}
+
+._list_subcategory {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+._list_subcategory .news--sub_title {
+  margin-bottom: 0;
+}
+
+._digitalsolution--category---list ._martech_box--title {
+  margin-bottom: 12px;
+}
+
+._digitalsolution--category---arrange {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #878a99;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 48px;
+}
+
+._digitalsolution--child--left ._digitalsolution--category---arrange {
+  margin-bottom: 32px;
+}
+
+._digitalsolution--category---arrange select {
+  border-radius: 8px;
+  border: 1px solid #e9ebec;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  width: 200px;
+  height: 44px;
+  color: #878a99;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 16px;
+}
+
+._digitalsolution--category---tablist {
+  border-radius: 16px;
+  border: 1px solid #e8e8e8;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
+  padding: 32px;
+}
+
+._digitalsolution--category---tablist ._martech_box--title .title {
+  font-size: 24px;
+}
+
+._digitalsolution--category---tablist ._martech_box--title {
+  margin-bottom: 32px;
+}
+
+.category-tablist--links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 16px;
+}
+
+.category-tablist--links a {
+  width: 100%;
+  color: #212529;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.category-tablist--links a.active,
+.category-tablist--links a:hover {
+  color: #3fddfe;
+}
+
+.category-tablist--links.category-tablist--lines a {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 16px;
+}
+
+.category-tablist--links.category-tablist--lines a span {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+/* .category-tablist--links.category-tablist--lines a::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #CED4DA;
+    flex: inherit;
+} */
+
+/* kien thuc martech */
+
+.subpage_martechknowledge_top {
+  width: 100%;
+  float: left;
+  background: #fff;
+  padding: 48px 0 64px;
+}
+
+.subpage_martechknowledge_top ._martech_box--title {
+  flex-wrap: wrap;
+}
+
+.subpage_martechknowledge_top ._martech_box--title .title {
+  flex: none;
+}
+
+.subpage_martechknowledge_top ._digitalsolution--child--hotslist {
+  padding-left: 18px;
+  gap: 32px;
+}
+
+.subpage_martechknowledge_top
+  ._digitalsolution--child--hotslist
+  ._martech_news--items {
+  padding-top: 32px;
+  padding-bottom: 0;
+}
+
+.subpage_martechknowledge_top
+  ._digitalsolution--child--hotslist
+  ._martech_news--items:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.subpage_martechknowledge_top
+  ._digitalsolution--child--hotslist
+  ._martech_news--items
+  .news--title {
+  margin-bottom: 0;
+}
+
+.subpage_martechknowledge_top
+  ._digitalsolution--child--hotslist
+  ._martech_news--items
+  ._news--items_datesub {
+  margin-bottom: 12px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+._martech_box--infor {
+  width: 100%;
+  display: flex;
+  gap: 10px 48px;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+._martech_box---name {
+  display: flex;
+  gap: 12px;
+  color: #212529;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+  line-height: 142.857%;
+  align-items: center;
+}
+
+._martech_box---name ._icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #bdbdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+._martech_box---name ._icon img {
+  width: 100%;
+}
+
+._martech_box---netword {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+._martech_box---netword .txt {
+  flex-shrink: 0;
+  color: #54639d;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 142.857%;
+}
+
+.__netword--list {
+  display: flex;
+  gap: 8px;
+}
+
+.__netword--list a {
+  border-radius: 4px;
+  border: 1px solid #54639d;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+}
+
+.__netword--list a img {
+  max-width: 20px;
+}
+
+._martech_box--detail---index {
+  margin-bottom: 32px;
+}
+
+._martech_box--detail---index ._digitalsolution_list--item {
+  border-radius: 8px;
+  overflow: hidden;
+  background: #f3f6f9;
+}
+
+._martech_box--detail---index ._digitalsolution_list--title {
+  padding: 12px 50px 12px 24px;
+  background-color: #f3f6f9;
+  background-position: right 32px center;
+}
+
+._martech_box--detail---index ._digitalsolution_list--title::after {
+  display: none;
+}
+
+._martech_box--detail---index ._digitalsolution_list--title .txt {
+  color: #212529;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+._martech_box--detail---index ._digitalsolution_list--body {
+  padding: 8px 32px 24px;
+}
+
+._martech_box--detail---index ._digitalsolution_list--body li {
+  width: 100%;
+  /* padding: 16px 0;
+    border-bottom: 1px solid #CED4DA; */
+  margin-bottom: 8px;
+}
+
+._martech_box--detail---index ._digitalsolution_list--body li:last-child {
+  margin-bottom: 0;
+}
+
+._martech_box--detail---index ._digitalsolution_list--body li:last-child {
+  width: 100%;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+._martech_box--detail---index ._digitalsolution_list--body li a {
+  color: #212529;
+}
+
+._digitalsolution_list--index---items {
+  width: 100%;
+  padding: 16px 0;
+  border-bottom: 1px solid #ced4da;
+}
+
+._digitalsolution_list--index---items:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+._digitalsolution_list--index---items h3 {
+  color: #212529;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  margin: 0;
+}
+
+._digitalsolution_list--index---body {
+  padding-top: 12px;
+  color: #878a99;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+._martech_box--detail---index
+  ._digitalsolution_list--title[aria-expanded="true"] {
+  background-color: #f3f6f9;
+}
+
+._digitalsolution_list--index---body p:last-child {
+  margin-bottom: 0;
+}
+
+._martech_box--detail---content {
+  color: #000;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 162.5%;
+  margin-bottom: 40px;
+}
+
+._martech_box--detail---content p {
+  margin-bottom: 20px;
+}
+
+._martech_box--detail---content p:last-child {
+  margin-bottom: 0;
+}
+
+._martech_box--detail---content h2,
+._martech_box--detail---content h3,
+._martech_box--detail---content h4 {
+  color: #1e1f4d;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  line-height: 133.333%;
+  margin: 0 0 0;
+}
+
+._martech_box--detail---content h2 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+._martech_box--detail---content h3 {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+._martech_box--detail---content img {
+  max-width: 100% !important;
+  height: auto !important;
+  margin: 0 auto;
+  display: block;
+}
+
+._martech_box--detail---other {
+  padding-right: 34px;
+}
+
+._martech_box--detail---bot {
+  padding: 24px 32px;
+  border-radius: 16px;
+  background: #f3f6f9;
+  display: flex;
+  align-items: center;
+  /* margin-bottom: 40px; */
+}
+
+._martech--btn---back {
+  display: inline-block;
+  border-radius: 4px;
+  border: 1px solid #4d7ff8;
+  background: #fff;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  color: #4d7ff8;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 142.857%;
+  padding: 8px 16px;
+}
+
+._martech--btn---back:hover {
+  color: #4d7ff8;
+}
+
+._martech--btn---back img {
+  margin-right: 8px;
+}
+
+._martech_box--detail---bot ._martech_box---netword {
+  justify-content: end;
+  flex: 1;
+}
+
+._martech_box--detail---relatedarticles {
+  padding-top: 32px;
+}
+
+._martech_box--detail---relatedarticles ._martech_box--title {
+  margin-bottom: 24px;
+}
+
+._martech_box--detail---relatedarticles ._martech_box--title .title {
+  font-size: 24px;
+}
+
+.relatedarticles--list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.relatedarticles--list a {
+  display: block;
+  width: 100%;
+  padding-left: 34px;
+  background: transparent url("/images/martech/ic-mt-12.png") no-repeat 4px 6px;
+  color: #2d65cd;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.block_martech_newspress {
+  float: left;
+  width: 100%;
+  padding: 48px 0 64px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.block_martech_newspress ._martech_box--title {
+  flex-wrap: wrap;
+}
+
+.block_martech_newspress ._martech_box--title .title {
+  flex: none;
+}
+
+.block_martech_newspress ._martech_news--list .swiper-slide::after {
+  display: none;
+}
+
+.block_martech_newspress ._martech_news--list .swiper-container {
+  overflow: visible;
+}
+
+.__martech-btn--viewall {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.__martech-btn--viewall::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #ced4da;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+.__martech-btn--viewall a {
+  display: inline-block;
+  color: #4d7ff8;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  background: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 0 24px;
+}
+
+.__martech-btn--viewall a img {
+  margin-left: 8px;
+}
+
+.subpage_digitalsolution_document .row {
+  gap: 30px 0;
+  margin: 0 -24px;
+}
+
+.subpage_digitalsolution_document .col-md-6 {
+  padding: 0 24px;
+}
+
+._digitalsolution--child--left .subpage_digitalsolution--categorylist .col {
+  padding: 0 8px;
+}
+
+._digitalsolution--child--left .subpage_digitalsolution--categorylist .row {
+  margin: 0 -8px;
+  gap: 16px 0;
+}
+
+._digitalsolution--child--left
+  .subpage_digitalsolution--categorylist
+  .news_first--items
+  ._body
+  .title {
+  font-size: 18px;
+}
+
+.result--title {
+  color: #333;
+  font-family: "Lexend Deca";
+  font-size: 20px;
+  line-height: 190%;
+  margin-bottom: 20px;
+}
+
+.result--title span {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+._digitalsolution--child--formiframe {
+  border-radius: 16px;
+  padding: 32px 0;
+  background: #d8e3fe;
+}
+._digitalsolution--child--formiframe > p {
+  font-size: 15px;
+  text-align: center;
+  color: #333;
+  font-weight: 500;
+  padding: 0 20px;
+}
+._digitalsolution--child--formiframe > p:first-child {
+  font-size: 24px;
+  text-align: center;
+  color: #333;
+  font-weight: 600;
+}
+
+.martech_menu--other {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.martech_menu--other ._logo {
+  flex-shrink: 0;
+}
+
+/* modal search */
+
+.modalsearch {
+}
+
+.modalsearch .modal-dialog {
+  width: calc(100% - 20px);
+  max-width: 720px;
+}
+
+.modalsearch .modal-content {
+  border: 0;
+  box-shadow: none;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.modalsearch-content {
+  width: 100%;
+  background-color: #fff;
+  padding: 0 0 24px;
+}
+
+.modalsearch-content--top {
+  display: flex;
+  align-items: center;
+  padding: 16px 54px 16px 24px;
+  position: relative;
+  gap: 16px;
+  border-bottom: 1px solid #e9ebec;
+}
+
+.modalsearch-content--top .close {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 24px;
+  margin: auto;
+  width: 24px;
+  height: 24px;
+}
+
+.modalsearch-content--top input {
+  width: 100%;
+  height: 24px;
+  border: 0;
+  box-shadow: none;
+  color: #878a99;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.modalsearch-content--top input:focus-visible {
+  outline-offset: unset;
+  outline: none;
+}
+
+.modalsearch-content--top svg path {
+  stroke: #212529;
+}
+
+.modalsearch-content--bot {
+  padding: 16px 24px 24px;
+}
+
+.modalsearch-content--keyshot {
+  width: 100%;
+}
+
+.modalsearch-content--keyshot h4 {
+  color: #878a99;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  margin: 0 0 8px;
+}
+
+.keyshot--list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 8px;
+}
+
+.keyshot--list a {
+  padding: 1px 8px;
+  color: #212529;
+  text-align: center;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  border-radius: 4px;
+  background: #eff2f7;
+}
+.keyshot--list .key-search {
+  padding: 1px 8px;
+  color: #212529;
+  text-align: center;
+  font-family: "Lexend Deca";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 142.857%;
+  border-radius: 4px;
+  background: #eff2f7;
+  cursor: pointer;
+}
+
+.modalsearch-content--results ._digitalsolution_box--list {
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.results--note {
+  color: #333;
+  font-family: "Lexend Deca";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 190%;
+  margin-bottom: 24px;
+}
+
+.results--note span {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.view--all {
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+
+.view--all::after {
+  display: block;
+  width: 100%;
+  content: "";
+  height: 1px;
+  background: #ced4da;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.view--all a {
+  color: #4d7ff8;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  position: relative;
+  z-index: 5;
+  display: inline-block;
+  padding: 0 24px;
+  background-color: #fff;
+}
+
+.view--all a svg {
+  margin-left: 5px;
+}
+
+.modalsearch-content--noresults {
+  padding: 33px 0;
+  text-align: center;
+}
+
+.modalsearch-content--noresults img {
+  max-width: 100%;
+}
+
+.modalsearch-content--noresults span {
+  color: #212529;
+  text-align: center;
+  font-family: "Lexend Deca";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 162.5%;
+  display: block;
+  padding-top: 8px;
+}
+
+.list-tag-dt {
+  float: left;
+  width: 100%;
+  margin-bottom: 30px;
+  padding-top: 10px;
+}
+
+.label-tags {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  color: rgba(0, 37, 132, 0.7);
+}
+
+.list-tag a {
+  display: inline-block;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #4d7ff8;
+}
+
+@media screen and (min-width: 1200px) {
+  ._martech_news--hots .row {
+    margin: 0 -16px;
+  }
+  ._martech_news--hots .row > * {
+    padding: 0 16px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .digitalsolution_categorycrm--list .row,
+  .subpage_digitalsolution_document .row,
+  ._digitalsolution--child--left .subpage_digitalsolution--categorylist .row {
+    margin: 0 -15px;
+  }
+  .digitalsolution_categorycrm--list .col-lg-3,
+  .subpage_digitalsolution_document .col-md-6,
+  ._digitalsolution--child--left .subpage_digitalsolution--categorylist .col {
+    padding: 0 15px;
+  }
+  ._digitalsolution--child--left,
+  ._martech_box--detail---other {
+    padding-right: 0;
+  }
+  .subpage_martechknowledge_top ._digitalsolution--child--hotslist {
+    padding-left: 0;
+  }
+  .martech_support--box {
+    padding: 48px 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  ._martech_box--title .title {
+    font-size: 26px;
+  }
+  ._martech_box--title._martech_box--titlelines .title,
+  .news_first--items ._body .title,
+  .block_martech_expertsharing
+    ._martech_news--list
+    .swiper-slide.swiper-slide-active
+    .news_first--items
+    ._body
+    .title,
+  ._digitalsolution--child--hots ._martech_box--title .title,
+  ._martech_box--detail---content h2,
+  ._martech_box--detail---content h3,
+  ._martech_box--detail---content h4 {
+    font-size: 20px;
+  }
+  ._digitalsolution_box {
+    gap: 30px;
+  }
+  ._digitalsolution_box--left {
+    width: calc(60% - 15px);
+  }
+  ._digitalsolution_box--right {
+    width: calc(40% - 15px);
+  }
+  ._digitalsolution_list {
+    padding: 32px 20px;
+  }
+  .news_second--items ._body .title,
+  ._digitalsolution--child--hotsfirst .news_first--items ._body .title {
+    font-size: 16px;
+  }
+  ._digitalsolution--child--hotslist ._martech_news--items .news--title {
+    font-size: 14px;
+  }
+  ._martech_box--detail---bot {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  ._martech_box--detail---bot ._martech_box---netword {
+    flex: none;
+    margin-left: auto;
+  }
+}
