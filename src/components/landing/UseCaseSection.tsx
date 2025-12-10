@@ -10,16 +10,16 @@ import { Autoplay } from "swiper/modules";
 export const usecases = [
   {
     id: 1,
-    name: "Ngân hàng",
+    name: "Bất động sản",
     problems: [
-      "Khách hỏi mở thẻ, vay vốn nhưng nhân viên quá tải, phản hồi chậm, mất khách tiềm năng",
-      "Hội thoại bị rời rạc giữa nhiều kênh: Website, App, Zalo, Facebook",
-      "Khách hỏi đi hỏi lại cùng một nội dung (lãi suất, điều kiện...), tốn thời gian tư vấn",
+      "Nhân viên sale không đủ thời gian tiếp cận hàng nghìn khách tiềm năng trên Zalo",
+      "Khách hỏi giá, vị trí, pháp lý nhưng phản hồi chậm, mất cơ hội chốt deal",
+      "Không có hệ thống theo dõi và remarketing khách đã quan tâm dự án",
     ],
     solutions: [
-      "Tư vấn mở thẻ, vay vốn 24/7, thu thập thông tin, đánh giá sơ bộ nhu cầu, hướng dẫn thủ tục",
-      "Quản lý hội thoại tập trung trên một giao diện, nhớ thông tin khách dù họ nhắn từ nhiều kênh khác nhau",
-      "Hiểu ngữ cảnh và trả lời chính xác, không cần viết sẵn kịch bản, cập nhật nội dung linh hoạt từ dữ liệu nội bộ",
+      "AI tự động quét nhóm Zalo bất động sản, kết bạn và gửi tin giới thiệu dự án đến khách tiềm năng",
+      "Chatbot tư vấn 24/7 về giá, tiến độ, pháp lý, hỗ trợ đặt lịch tham quan ngay trên Zalo",
+      "Ghi nhớ lịch sử tương tác, tự động nhắc follow-up và gửi ưu đãi cho khách quan tâm",
     ],
     iconProblem: "/images/ic-ic1.png",
     iconSolution: "/images/ic-ic2.png",
@@ -27,16 +27,16 @@ export const usecases = [
 
   {
     id: 2,
-    name: "F&B",
+    name: "Thời trang & Mỹ phẩm",
     problems: [
-      "Giờ cao điểm, inbox quá tải, không ai kịp trả lời đặt bàn",
-      "Khách hỏi món, combo, khuyến mãi lặp lại mỗi ngày",
-      "Phản hồi review/feedback sau dùng bữa quá chậm",
+      "Inbox Zalo quá tải vào giờ cao điểm, bỏ lỡ nhiều đơn hàng tiềm năng",
+      "Khách hỏi size, màu, giá, khuyến mãi lặp đi lặp lại tốn thời gian",
+      "Không có cách tiếp cận tệp khách hàng mới trên Zalo một cách tự động",
     ],
     solutions: [
-      "Tự động nhận và xác nhận đặt bàn theo thời gian còn trống. Gửi tin nhắn xác nhận ngay trong chat",
-      "Gợi ý món theo sở thích, giờ ăn hoặc lịch sử khách hàng",
-      "Tự động nhắn hỏi cảm nhận sau ăn, gửi ưu đãi khuyến khích đánh giá,...",
+      "Chatbot tự động trả lời hỏi đáp sản phẩm, báo giá, check hàng 24/7 trên Zalo",
+      "AI hiểu ngữ cảnh, gợi ý sản phẩm phù hợp và hướng dẫn đặt hàng ngay trong chat",
+      "Quét nhóm Zalo thời trang, kết bạn tự động và gửi catalog sản phẩm mới đến khách tiềm năng",
     ],
     iconProblem: "/images/ic-ic1.png",
     iconSolution: "/images/ic-ic2.png",
@@ -44,16 +44,50 @@ export const usecases = [
 
   {
     id: 3,
-    name: "Giáo dục",
+    name: "Giáo dục & Đào tạo",
     problems: [
-      "Inbox nổ tung mùa tuyển sinh nhưng thiếu người trực",
-      "Học viên cũ hỏi lại thông tin lịch học, đổi lớp, hỗ trợ kỹ thuật",
-      "Tư vấn viên mới chưa nắm đủ thông tin, trả lời không thống nhất",
+      "Mùa tuyển sinh inbox Zalo nổ tung, không đủ nhân sự trả lời tư vấn",
+      "Khách hỏi học phí, lịch học, giảng viên nhưng tư vấn viên bận không kịp phản hồi",
+      "Khó tiếp cận phụ huynh và học viên tiềm năng trong các nhóm Zalo giáo dục",
     ],
     solutions: [
-      "Tư vấn khóa học theo nhu cầu (ngành, độ tuổi, thời gian học), gửi thông tin học phí, lộ trình, thời gian khai giảng",
-      "Ghi nhớ lịch sử học viên, phân loại theo trạng thái, trả lời nhanh các câu hỏi thường gặp",
-      "Dựa trên dữ liệu huấn luyện sẵn để tư vấn thống nhất, hạn chế sai lệch thông tin do con người",
+      "AI tự động quét và kết bạn với phụ huynh/học viên từ nhóm Zalo, gửi tin giới thiệu khóa học",
+      "Chatbot tư vấn khóa học 24/7: học phí, lịch học, lộ trình, đăng ký ngay trên Zalo",
+      "Remarketing tự động: nhắc lịch khai giảng, gửi ưu đãi đặc biệt cho khách quan tâm",
+    ],
+    iconProblem: "/images/ic-ic1.png",
+    iconSolution: "/images/ic-ic2.png",
+  },
+
+  {
+    id: 4,
+    name: "Bảo hiểm & Tài chính",
+    problems: [
+      "Đội sale không đủ thời gian cold-call và tiếp cận khách hàng tiềm năng mới",
+      "Khách hỏi sản phẩm bảo hiểm nhưng quy trình tư vấn dài, dễ mất khách",
+      "Không có hệ thống chăm sóc và remarketing khách hàng cũ hiệu quả",
+    ],
+    solutions: [
+      "AI quét nhóm Zalo, kết bạn tự động và gửi tin giới thiệu gói bảo hiểm phù hợp",
+      "Chatbot tư vấn 24/7 về quyền lợi, phí bảo hiểm, hỗ trợ đăng ký ngay trên Zalo",
+      "Tự động nhắc ngày đáo hạn, gửi ưu đãi gia hạn và cross-sell sản phẩm mới",
+    ],
+    iconProblem: "/images/ic-ic1.png",
+    iconSolution: "/images/ic-ic2.png",
+  },
+
+  {
+    id: 5,
+    name: "Spa & Làm đẹp",
+    problems: [
+      "Nhân viên bận phục vụ khách, không kịp trả lời tin nhắn đặt lịch trên Zalo",
+      "Khách hỏi giá dịch vụ, combo, khuyến mãi lặp đi lặp lại hàng ngày",
+      "Không có cách tiếp cận khách hàng mới trong khu vực một cách tự động",
+    ],
+    solutions: [
+      "AI quét nhóm Zalo làm đẹp theo khu vực, kết bạn và gửi ưu đãi dịch vụ spa",
+      "Chatbot đặt lịch tự động 24/7, báo giá dịch vụ, gợi ý combo phù hợp",
+      "Remarketing: nhắc lịch hẹn, gửi voucher sinh nhật, ưu đãi khách hàng thân thiết",
     ],
     iconProblem: "/images/ic-ic1.png",
     iconSolution: "/images/ic-ic2.png",
@@ -70,7 +104,7 @@ export default function IndustriesSection() {
         {/* Section header */}
         <div className="text-center mb-12">
           <h2 className="text-2xl md:text-[26px] lg:text-[32px] font-bold text-[#1E1F4D] mb-4 leading-[140%] text-center">
-            Use case sử dụng BizChatAI của một số ngành nghề
+            Chatbot AI Sale Zalo cho từng ngành nghề
           </h2>
         </div>
 

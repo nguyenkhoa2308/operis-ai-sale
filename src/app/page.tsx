@@ -17,22 +17,22 @@ const slides1 = [
   {
     id: 1,
     image: "/images/img-assistant1.png",
-    alt: "Tích hợp đa kênh, đa nền tảng",
+    alt: "Quét nhóm Zalo, kết bạn tự động",
   },
   {
     id: 2,
     image: "/images/img-assistant2.png",
-    alt: "AI nhận diện tự động gán nhãn",
+    alt: "Gửi tin nhắn hàng loạt trên Zalo",
   },
   {
     id: 3,
     image: "/images/img-assistant3.png",
-    alt: "Tự train dữ liệu theo tài liệu",
+    alt: "Chatbot tư vấn, báo giá tự động",
   },
   {
     id: 4,
     image: "/images/img-assistant4.png",
-    alt: "Tư vấn tự nhiên, đúng luồng",
+    alt: "Chốt sale thông minh 24/7",
   },
 ];
 
@@ -40,22 +40,22 @@ const slides2 = [
   {
     id: 1,
     image: "/images/img-assistant5.png",
-    alt: "Chatbot công nghệ cao, thành thạo giao tiếp đa ngôn ngữ",
+    alt: "Quản lý đa tài khoản Zalo trên một nền tảng",
   },
   {
     id: 2,
     image: "/images/img-assistant6.png",
-    alt: "Xây dựng hành trình trả nghiệm tốt nhất cho khách hàng nhờ API kết nối theo đặc thù từng ngành",
+    alt: "Remarketing tự động với khách hàng cũ qua Zalo",
   },
   {
     id: 3,
     image: "/images/img-assistant7.png",
-    alt: "Phân luồng quy trình xử lý dữ liệu, báo cáo khoa học, trực quan",
+    alt: "Báo cáo doanh số, tỷ lệ chốt đơn chi tiết",
   },
   {
     id: 4,
     image: "/images/img-assistant8.png",
-    alt: "xử lý hội thoại đa nền tảng, cá nhân hoá tương tác",
+    alt: "Đồng bộ CRM, quản lý đơn hàng tự động",
   },
 ];
 
@@ -66,18 +66,16 @@ export default function Home() {
       <main>
         <HeroBanner />
         <AssistantSection
-          title="Trợ lý AI thế hệ mới"
-          subtitle="Tư vấn linh hoạt, hiểu ngữ cảnh, phản hồi như con người"
-          description="Dịch vụ Chatbot AI - OperisChatAI ứng dụng trí tuệ nhân tạo để hiểu nhu
-            cầu khách hàng, tư vấn theo ngữ cảnh và phản hồi theo thời gian
-            thực, thay vì chỉ chạy theo kịch bản cứng nhắc"
+          title="Chatbot AI Sale Zalo thế hệ mới"
+          subtitle="Tự động tìm kiếm, tiếp cận và chốt sale khách hàng trên Zalo"
+          description="Chatbot AI Sale Zalo giúp doanh nghiệp tự động quét nhóm Zalo, kết bạn với khách hàng tiềm năng, tư vấn và chốt đơn 24/7 - tất cả hoàn toàn tự động"
           slides={slides1}
         />
         <AdvantagesSection />
         <AssistantSection
-          title="OperisChatAI ứng dụng công nghệ mới nhất, được phát triển bởi đội ngũ Operis"
+          title="Công nghệ Chatbot AI tiên tiến, tối ưu cho sale trên Zalo"
           slides={slides2}
-          buttonTitle="Đăng ký tư vấn 1:1"
+          buttonTitle="Đăng ký dùng thử Chatbot"
         />
         <IndustriesSection />
         <UseCaseSection />

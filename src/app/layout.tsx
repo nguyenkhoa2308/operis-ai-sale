@@ -23,6 +23,9 @@ export const metadata: Metadata = {
       "Giải pháp AI Sales Agent giúp doanh nghiệp tự động hóa tư vấn, bán hàng và chăm sóc khách hàng 24/7.",
     type: "website",
   },
+  icons: {
+    icon: "/images/logo.png",
+  },
 };
 
 export default function RootLayout({

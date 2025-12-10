@@ -4,10 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const features = [
-  "Tự động train & cập nhật dữ liệu doanh nghiệp",
-  "Hiểu luồng trò chuyện, giao tiếp tự nhiên, logic",
-  "Kết nối đa kênh và đồng bộ dữ liệu trên một nền tảng",
-  "Tư vấn, bán hàng, chăm sóc khách hàng 24/7",
+  "Quét & tìm khách hàng tiềm năng trong các nhóm Zalo hoàn toàn tự động",
+  "Gửi tin nhắn hàng loạt để tiếp cận khách hàng ngay lập tức",
+  "AI Chatbot thông minh tư vấn – trả lời – chăm sóc khách hàng 24/7",
+  "Giải pháp All-in-One quản lý toàn bộ hành trình: tìm kiếm, tiếp cận, nuôi dưỡng khách hàng",
 ];
 
 export default function HeroBanner() {
@@ -18,12 +18,11 @@ export default function HeroBanner() {
           <div className="relative w-full px-4">
             <div>
               <h1 className="text-[#511D9A] text-4xl lg:text-5xl 2xl:text-[52px] font-bold mb-5 leading-[130%]">
-                <span className="text-[#111] block">Dịch vụ </span> Chatbot AI
-                Agent
+                <span className="text-[#111] block">Operis </span> Hệ Thống AI
               </h1>
               <div className="text-[#111] text-2xl lg:text-[26px] 2xl:text-[32px] font-bold mb-8 leading-[130%]">
-                giúp doanh nghiệp tư vấn, <br /> bán hàng &amp; chăm sóc khách
-                hàng
+                Tự Động Hóa Quy Trình Bán Hàng
+                <br />& Chăm Sóc Khách Hàng Trên Zalo
               </div>
               <div className="grid grid-cols-2 gap-2 mb-12 w-full">
                 {features.map((feature, index) => (
@@ -35,8 +34,7 @@ export default function HeroBanner() {
                       alt="xác nhận"
                       className="block absolute left-0 top-0 bottom-0 m-auto"
                     />
-                    <div className="w-full h-full py-4 pr-4 pl-6 bg-[linear-gradient(123deg,_#F3EFFF_10.33%,_rgba(243,239,255,0)_75.76%)] text-[#333] leading-[130%] rounded-xl">
-                      {" "}
+                    <div className="w-full h-full py-4 pr-4 pl-6 bg-[linear-gradient(123deg,_#F3EFFF_10.33%,_rgba(243,239,255,0)_75.76%)] text-[#333] leading-[130%] rounded-xl flex items-center">
                       {feature}
                     </div>
                   </div>
@@ -48,21 +46,14 @@ export default function HeroBanner() {
                   href="#"
                   className="flex-1 w-full bg-[radial-gradient(50.73%_100%_at_50%_100%,_#A068F4_0%,_#6631F3_100%)] shadow-[0_4px_8px_0_rgba(0,0,0,0.25)] text-white rounded-lg border border-1 border-[#511D9A] text-center text-[#511D9A] py-4 px-6 font-semibold text-lg line-height[130%] inline-block bg-white"
                 >
-                  Dùng thử miễn phí
+                  Khám Phá Chatbot AI Sale Zalo
                 </Link>
                 <Link
                   target="_blank"
                   href="#"
                   className="rounded-lg border border-1 border-[#511D9A] text-center text-[#511D9A] py-4 px-6 font-semibold text-lg line-height[130%] inline-block bg-white"
                 >
-                  Tư vấn 1:1
-                </Link>
-                <Link
-                  href="/pricing"
-                  className="rounded-lg border border-1 border-[#511D9A] text-center text-[#511D9A] py-4 px-6 font-semibold text-lg line-height[130%] inline-block bg-white"
-                  target="_blank"
-                >
-                  Bảng giá
+                  Xem Demo Chatbot
                 </Link>
               </div>
             </div>

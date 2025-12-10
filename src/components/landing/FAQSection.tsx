@@ -7,62 +7,57 @@ import { ChevronDown } from "lucide-react";
 const faqs = [
   {
     id: 1,
-    question: "OperisChat là gì và khác biệt gì so với chatbot thông thường?",
+    question: "Chatbot AI Sale Zalo là gì và hoạt động như thế nào?",
     answer:
-      "OperisChat là dịch vụ Chatbot AI thông minh được phát triển bởi Operis, hoạt động như một trợ lý ảo chuyên nghiệp. Không giống chatbot thường chỉ trả lời theo kịch bản có sẵn, OperisChat có khả năng thấu hiểu sâu sắc ý định của khách hàng, giúp tự động hóa việc bán hàng và chăm sóc khách hàng như người thật.",
+      "Chatbot AI Sale Zalo là giải pháp tự động hóa quy trình bán hàng trên nền tảng Zalo. Chatbot có khả năng tự động quét thành viên từ các nhóm Zalo, kết bạn với khách hàng tiềm năng, gửi tin nhắn giới thiệu sản phẩm và tư vấn chốt đơn 24/7 - tất cả hoàn toàn tự động mà không cần nhân viên can thiệp.",
   },
   {
     id: 2,
-    question:
-      "Agentic AI trong OperisChat hoạt động như thế nào và có gì khác biệt?",
+    question: "Chatbot có thể quét và kết bạn tự động từ nhóm Zalo như thế nào?",
     answer:
-      "Agentic AI là công nghệ lõi tạo nên sự vượt trội của OperisChat. Nó cho phép chatbot không chỉ Lắng nghe - Trả lời mà còn có thể Chủ động Hành động. Chatbot có thể tự ra quyết định, chủ động thực hiện các tác vụ phức tạp như kết nối vào hệ thống CRM, ERP để kiểm tra thông tin khách hàng, tự động đặt lịch hẹn vào lịch của nhân viên hay xử lý các bước trong quy trình bán hàng mà không cần kịch bản có sẵn. Đây là khả năng tự chủ giúp chatbot hoạt động như một nhân viên thực thụ.",
+      "Chatbot AI sử dụng công nghệ thông minh để quét danh sách thành viên từ các nhóm Zalo mục tiêu (nhóm bất động sản, thời trang, giáo dục...). Sau đó tự động gửi lời mời kết bạn kèm tin nhắn giới thiệu sản phẩm/dịch vụ. Bạn có thể lọc và phân loại khách hàng theo tiêu chí ngành nghề, khu vực để tiếp cận đúng đối tượng.",
   },
   {
     id: 3,
-    question: "OperisChat có phù hợp với mô hình doanh nghiệp nào?",
+    question: "Chatbot AI có thể gửi tin nhắn hàng loạt trên Zalo không?",
     answer:
-      "OperisChat được thiết kế để phù hợp với mọi quy mô doanh nghiệp từ doanh nghiệp lớn cho đến các doanh nghiệp vừa và nhỏ (SME). Đối với doanh nghiệp lớn: dịch vụ đủ mạnh và có khả năng mở rộng linh hoạt, phù hợp tích hợp CRM/ERP chuyên sâu. Đối với SME: cung cấp các gói linh hoạt theo nhu cầu và ngân sách. Mục tiêu là mang giải pháp Chatbot AI mạnh mẽ đến cho mọi doanh nghiệp.",
+      "Có. Chatbot hỗ trợ gửi tin nhắn hàng loạt đến danh sách khách hàng mục tiêu trên Zalo. Bạn có thể cá nhân hóa nội dung tin nhắn, lên lịch gửi theo thời gian và theo dõi tỷ lệ đọc, phản hồi. Tính năng này giúp tiếp cận hàng nghìn khách hàng tiềm năng mỗi ngày mà không tốn thời gian nhắn tin thủ công.",
   },
   {
     id: 4,
-    question:
-      "Khả năng xử lý ngôn ngữ tự nhiên (NLP) của OperisChat có hiểu được tiếng Việt phức tạp không?",
+    question: "Chatbot có hiểu và trả lời tiếng Việt tự nhiên không?",
     answer:
-      "Có. Đây là thế mạnh vượt trội của OperisChat. Được huấn luyện trên hệ thống Big Data của VCCorp trong hơn 10 năm, công nghệ NLP có khả năng hiểu chính xác tiếng Việt đa vùng miền, bao gồm từ lóng, viết tắt, sai chính tả và câu hỏi phức tạp. Nhờ đó cuộc trò chuyện trở nên tự nhiên và mượt mà nhất.",
+      "Có. Chatbot AI Sale Zalo được huấn luyện chuyên sâu với tiếng Việt, hiểu được ngữ cảnh, từ lóng, viết tắt và cả những câu hỏi phức tạp. Chatbot có thể tư vấn sản phẩm, báo giá, xử lý phản đối như \"đắt quá\", \"để suy nghĩ\" và hướng dẫn đặt hàng một cách tự nhiên như nhân viên sale thực thụ.",
   },
   {
     id: 5,
-    question:
-      "OperisChat có thể tích hợp với các phần mềm quản lý (CRM, ERP) mà doanh nghiệp đang sử dụng không?",
+    question: "Tôi có thể quản lý nhiều tài khoản Zalo cùng lúc không?",
     answer:
-      "Có. OperisChat có khả năng tích hợp với hầu hết các phần mềm CRM, ERP và các hệ thống quản lý nội bộ khác thông qua API. Điều này giúp đồng bộ dữ liệu, tạo ra quy trình vận hành khép kín và thông minh cho doanh nghiệp.",
+      "Có. Hệ thống cho phép quản lý nhiều tài khoản Zalo OA và Zalo cá nhân trên một nền tảng duy nhất. Bạn có thể theo dõi tất cả cuộc trò chuyện, thống kê hiệu suất từng tài khoản và phân bổ công việc cho chatbot một cách tập trung.",
   },
   {
     id: 6,
-    question: "Tôi có cần đội ngũ kỹ thuật để vận hành OperisChat không?",
+    question: "Chatbot có tích hợp được với CRM và hệ thống quản lý đơn hàng không?",
     answer:
-      "Không cần thiết. Giao diện quản trị của OperisChat được thiết kế trực quan và dễ sử dụng. Người dùng có thể xây dựng kịch bản, cập nhật kiến thức cho chatbot và theo dõi báo cáo mà không cần biết lập trình. Đội ngũ hỗ trợ sẽ đào tạo đầy đủ khi triển khai.",
+      "Có. Chatbot AI Sale Zalo có khả năng đồng bộ dữ liệu khách hàng với các hệ thống CRM, ERP và phần mềm quản lý đơn hàng thông qua API. Khi khách chốt đơn qua Zalo, thông tin sẽ tự động được cập nhật vào hệ thống quản lý của bạn.",
   },
   {
     id: 7,
-    question:
-      "Chi phí của OperisChat được tính như thế nào và có những gói dịch vụ nào?",
+    question: "Chi phí sử dụng Chatbot AI Sale Zalo như thế nào?",
     answer:
-      "OperisChat cung cấp nhiều gói dịch vụ linh hoạt, phù hợp với các quy mô doanh nghiệp khác nhau. Chi phí phụ thuộc vào số lượng cuộc trò chuyện, tính năng nâng cao và mức hỗ trợ. Vui lòng liên hệ 0964 69 12 99 để được báo giá chi tiết và tư vấn gói phù hợp.",
+      "Chúng tôi cung cấp nhiều gói dịch vụ linh hoạt phù hợp với mọi quy mô doanh nghiệp. Chi phí tính theo số lượng tin nhắn, số tài khoản Zalo và các tính năng nâng cao. Vui lòng liên hệ 0964 69 12 99 để được tư vấn gói phù hợp và báo giá chi tiết.",
   },
   {
     id: 8,
-    question:
-      "Thông tin khách hàng và dữ liệu kinh doanh có được bảo mật không?",
+    question: "Sử dụng Chatbot có an toàn cho tài khoản Zalo của tôi không?",
     answer:
-      "Có. Bảo mật là ưu tiên hàng đầu của chúng tôi. OperisChat được xây dựng trên nền tảng công nghệ vững chắc của VCCorp và tuân thủ các tiêu chuẩn an ninh mạng nghiêm ngặt nhất, đảm bảo an toàn tuyệt đối cho dữ liệu doanh nghiệp.",
+      "Có. Hệ thống được thiết kế để hoạt động trong giới hạn an toàn của Zalo, tránh spam và vi phạm chính sách. Chúng tôi sử dụng các thuật toán thông minh để điều chỉnh tốc độ gửi tin, kết bạn phù hợp, đảm bảo tài khoản Zalo của bạn luôn an toàn.",
   },
   {
     id: 9,
-    question: "Chính sách hỗ trợ khách hàng của Operis như thế nào?",
+    question: "Tôi có cần biết kỹ thuật để sử dụng Chatbot không?",
     answer:
-      "Chúng tôi cung cấp hỗ trợ 24/7 với đội ngũ chuyên nghiệp. Không chỉ hỗ trợ kỹ thuật, đội ngũ còn tư vấn cách tối ưu hóa sử dụng OperisChat để doanh nghiệp khai thác tối đa hiệu quả.",
+      "Không cần. Giao diện quản trị được thiết kế trực quan, dễ sử dụng. Bạn chỉ cần thiết lập thông tin sản phẩm, kịch bản tư vấn và chatbot sẽ tự động hoạt động. Đội ngũ hỗ trợ sẽ đào tạo và hướng dẫn chi tiết khi triển khai.",
   },
 ];
 

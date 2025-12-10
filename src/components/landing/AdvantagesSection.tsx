@@ -5,48 +5,52 @@ import Link from "next/link";
 
 const advantages = [
   {
-    title: "Hiểu và phân tích ngữ cảnh trong hội thoại",
+    title: "Tự động tiếp cận & tư vấn khách hàng trên Zalo",
     features: [
-      "AI hiểu nội dung cuộc trò chuyện theo cách người thật đang nói",
-      "Không cần gán từ khóa, AI vẫn nhận diện đúng nhu cầu",
-      "Hiểu cả những câu hỏi gián tiếp, câu hỏi dài, lắt léo",
-      "Gợi ý phản hồi phù hợp với tone và nội dung đang diễn ra",
+      "AI chủ động nhắn tin giới thiệu sản phẩm đến khách hàng tiềm năng",
+      "Tự động trả lời tin nhắn Zalo 24/7, không bỏ lỡ khách hàng nào",
+      "Gửi tin nhắn hàng loạt đến danh sách khách hàng mục tiêu",
+      "Chatbot tư vấn sản phẩm, báo giá tự động ngay trong Zalo",
     ],
     image: "/images/img-advantage1.png",
   },
   {
-    title: "Hiểu khách hàng cần gì và xử lý đúng cách",
+    title: "Quét & tìm kiếm khách hàng từ nhóm Zalo",
     features: [
-      "Phân biệt giữa hỏi giá – khiếu nại – cần tư vấn – hỏi bảo hành...",
-      "Tự động chia hội thoại theo nhóm: Tư vấn, xử lý đơn, chăm sóc...",
-      "Giao tiếp trôi chảy dù khách đổi chủ đề giữa chừng",
+      "Tự động quét thành viên từ các nhóm Zalo tiềm năng",
+      "Lọc và phân loại khách hàng theo tiêu chí ngành nghề, khu vực",
+      "Kết bạn tự động với khách hàng mục tiêu trên Zalo",
+      "Xây dựng danh sách leads chất lượng để remarketing",
     ],
     image: "/images/img-advantage2.png",
   },
   {
-    title: "Phân tích cảm xúc hội thoại để tư vấn hợp lý",
+    title: "Chốt sale thông minh với AI hiểu ngữ cảnh",
     features: [
-      'Xử lý phản đối phổ biến như "đắt quá", "để suy nghĩ"...',
-      "Tư vấn gói phù hợp theo nhu cầu khách đang đề cập",
-      "Kết nối đến bước đặt hàng/đăng ký ngay trong hội thoại",
+      "AI nhận diện nhu cầu mua hàng và đẩy nhanh quá trình chốt đơn",
+      'Xử lý phản đối phổ biến: "đắt quá", "để suy nghĩ", "so sánh giá"...',
+      "Tự động gợi ý sản phẩm phù hợp theo nhu cầu khách đề cập",
+      "Hướng dẫn đặt hàng, thanh toán ngay trong cuộc trò chuyện Zalo",
     ],
     image: "/images/img-advantage3.png",
   },
   {
-    title: "Ghi nhớ khách hàng & cá nhân hóa nội dung",
+    title: "Chăm sóc & nuôi dưỡng khách hàng tự động",
     features: [
-      "Ghi nhớ tên, lịch sử, sản phẩm đã hỏi/đặt trước đó",
-      "Gợi ý sản phẩm phù hợp hoặc nhắc lại ưu đãi chưa dùng",
-      "Không cần khách nhắc lại thông tin ở lần trò chuyện sau",
+      "Ghi nhớ lịch sử mua hàng, sở thích của từng khách",
+      "Tự động gửi tin nhắn chúc mừng sinh nhật, ưu đãi cá nhân",
+      "Nhắc khách hàng về đơn hàng chưa thanh toán, giỏ hàng bỏ quên",
+      "Remarketing tự động với khách hàng cũ qua Zalo",
     ],
     image: "/images/img-advantage4.png",
   },
   {
-    title: "Kết nối dữ liệu & phần mềm quản lý doanh nghiệp",
+    title: "Quản lý đa tài khoản Zalo & báo cáo hiệu suất",
     features: [
-      "Đồng bộ với CRM để lấy dữ liệu khách hàng & cập nhật trạng thái",
-      "Kết nối hệ thống đặt hàng, thanh toán, lịch học, lịch hẹn...",
-      "Có thể tùy biến tích hợp theo đặc thù ngành: Giáo dục, ngân hàng, nhà hàng",
+      "Quản lý nhiều tài khoản Zalo OA và Zalo cá nhân trên một nền tảng",
+      "Thống kê số tin nhắn, tỷ lệ phản hồi, tỷ lệ chốt đơn",
+      "Báo cáo doanh số bán hàng theo ngày/tuần/tháng",
+      "Đồng bộ dữ liệu khách hàng với CRM, hệ thống quản lý đơn hàng",
     ],
     image: "/images/img-advantage5.png",
     showCTA: true,
@@ -60,7 +64,7 @@ export default function AdvantagesSection() {
         {/* Section header */}
         <div className="text-center">
           <h2 className="text-2xl md:text-[26px] lg:text-[32px] font-bold text-[#1E1F4D] leading-[140%] text-center">
-            OperisChatAI có thể làm gì cho doanh nghiệp của bạn?
+            Chatbot AI Sale Zalo có thể làm gì cho doanh nghiệp của bạn?
           </h2>
         </div>
       </div>
